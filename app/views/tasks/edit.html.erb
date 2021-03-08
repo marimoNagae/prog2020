@@ -1,0 +1,23 @@
+<div class= "mx-auto w-50 p-3" style="width: 1500px;">
+  <h2>データ編集</h2>
+  <div class ="form-group">
+      <%= form_for(@task) do |f| %>
+          <%= f.label :ソフト名 %>
+          <%= f.text_field :title, class: "form-control"%>
+          <%= f.label :日付 %>
+          <%= f.text_field :date, class: "form-control"%>
+          <%= f.label :パス %>
+          <%= f.text_field :pass, class: "form-control"%>
+          <%= f.label :導入目的 %>
+          <%= f.text_field :purpose, class: "form-control"%>
+          <%= f.label :参考サイトURL %>
+          <%= f.text_field :urlink, class: "form-control"%>
+          <%= f.label :詳細メモ %>
+          <%= f.text_area :comment, class: "form-control"%>
+
+          <%= f.submit :update %>
+      <% end %>
+  </div>
+  <!-- railsのlink_to("第一引数", "第二引数")メソッド：　第一引数に表示する文字、第二引数にURLを書くことでaタグに変換される-->
+  <%= link_to '← 戻る', tasks_path, class: "btn btn-outline-primary float-right" %>
+</div>

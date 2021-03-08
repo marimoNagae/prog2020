@@ -1,0 +1,44 @@
+      
+<div class="main top-main">
+    <div class="top-message py-3 px-5 rounded-lg text-white ">
+        <h1 class = "pt-3">環境構築マップ</h1>
+        <h5>環境構築のメモを残して理想的なプログラミングを</h5>
+    </div>
+</div>
+<div>
+    <!-- railsのlink_to("第一引数", "第二引数")メソッド：　第一引数に表示する文字、第二引数にURLを書くことでaタグに変換される-->
+    <h2 class="my-3 pt-3" >ソフト管理　<%= link_to '+ add', new_task_path, class: "btn btn-outline-primary" %></h2>
+</div>
+<div class = "table-responsive yscroll my-3">
+    <table class = "table bg-white table-hover">
+        <thead>
+            <!-- テーブル関数　-->
+            <tr> <!-- tasksテーブル項目-->
+                <th class="fixed01 bg-dark text-white">ソフト名</th>
+                <th class="fixed01 bg-dark text-white">日付</th>
+                <th class="fixed01 bg-dark text-white">パス</th>
+                <th class="fixed01 bg-dark text-white">導入目的</th>
+                <th class="fixed01 bg-dark text-white">参考サイトURL</th>
+                <th class="fixed01 bg-dark text-white"></th>
+                <th class="fixed01 bg-dark text-white"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 配列tasksにデータを入れて、そこからeach文で一つずつ表示-->
+            <% @tasks.each do |task| %>
+                <tr>
+                    <td><%= task.title %></td>
+                    <td><%= task.date %></td>
+                    <td><%= task.pass %></td>
+                    <td><%= task.purpose %></td>
+                    <td><%= task.urlink %></td>
+                    <td><%= link_to 'edit', edit_task_path(task), class: "btn btn-outline-primary h-25" %></td>
+                    <td><%= link_to 'delete',task_path(task), method: :delete, data: {confirm: '削除しますか？'}, class: "btn btn-outline-danger"%></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+  
+</div>
+
+
