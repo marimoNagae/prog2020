@@ -1,0 +1,24 @@
+<div class="main top-main">
+    <div class="top-message">
+        <h1>環境構築マップ</h1>
+        <p>Find me in app/views/home/top.html.erb</p>
+        <p>このページは環境構築のメモを残すページです。</p>
+    </div>
+</div>
+
+
+<h1>新規追加</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ソフト名</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @tasks.each do |task| %>
+            <tr>
+                <td><%= task.title %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
