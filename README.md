@@ -1,9 +1,9 @@
 # prog2020
 2020年制作「環境構築マップ」
-ruby on rails で製作した、PCの環境構築を表形式でメモするためのWebアプリです。
+Ruby on Rails で製作した、PCの環境構築を表形式でメモするためのWebアプリです。
 
 "Environment Setup Map" created in 2020.
-This is a web application made with ruby on rails to note down the environment construction in a table format.
+This is a web application made with Ruby on Rails to note down the environment construction in a table format.
 
 # Requirements
 * ruby on Rails　6.1.0
