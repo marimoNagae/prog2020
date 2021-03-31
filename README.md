@@ -10,10 +10,12 @@ This is a web application made with Ruby on Rails to note down the environment c
 * bootstrap　5.0.0.alpha3
 
 # Usage
+'''
 git clone https://github.com/marimoNagae/prog2020.git
 cd prog2020
 bundle
 rails s
+'''
 * toppage http://localhost:3000/tasks/
 
 # License
