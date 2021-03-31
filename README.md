@@ -5,6 +5,17 @@ Ruby on Rails で製作した、PCの環境構築を表形式でメモするた�
 "Environment Setup Map" created in 2020.
 This is a web application made with Ruby on Rails to note down the environment construction in a table format.
 
+# Features
+PCに入れたソフトなどの情報について、フォームに入力し、表形式で表示するようにしています。  
+表の項目は以下の通りです。  
+ソフト名, 日付, パス, 導入目的, 参考サイトURL  
+（詳細情報についてはEditから閲覧できます。）
+
+Information about the software and other information you have installed on your PC is entered into a form and displayed in a table format.    
+The items in the table are as follows.  
+Software name, date, path, purpose of installation, URL of reference site  
+(Detailed information can be viewed from Edit.
+  
 # Requirements
 * ruby on Rails　6.1.0
 * bootstrap　5.0.0.alpha3
